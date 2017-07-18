@@ -46,13 +46,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Example\ForceField\Script\RenderDepth.cs" />
-     <Compile Include="Assets\Example\RenderDepthMap\Script\RenderDepthMap.cs" />
-     <Compile Include="Assets\Example\ScannerEffect\Script\ScannerEffect.cs" />
-     <None Include="Assets\Example\ForceField\Shader\ForceField.shader" />
-     <None Include="Assets\Example\RenderDepthMap\Shader\RenderDepthMapShader.shader" />
-     <None Include="Assets\Example\ScannerEffect\Shader\ScannerEffect.shader" />
-     <None Include="Assets\Example\SeeThroughWall\Shader\SeeThroughWall.shader" />
+     <Compile Include="Assets\ForceField\RenderDepth.cs" />
+     <Compile Include="Assets\RenderDepthMap\RenderDepthMap.cs" />
+     <Compile Include="Assets\ScannerEffect\Script\ScannerEffect.cs" />
+     <None Include="Assets\RenderDepthMap\RenderDepthMap.shader" />
+     <None Include="Assets\ScannerEffect\Shader\ScannerEffect.shader" />
+     <None Include="Assets\SeeThroughWall\SeeThroughWall.shader" />
      <None Include="Assets\ForceField\ForceField.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
