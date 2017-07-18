@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/ForceField/ForceField.unity
+- path: Assets/ScannerEffect/ScannerScene.unity
   isLoaded: 1
   isActive: 1

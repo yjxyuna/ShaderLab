@@ -45,9 +45,8 @@ Shader "chenjd/ScannerEffect"
 			{
 				v2f o;
 				o.vertex = UnityObjectToClipPos(v.vertex);
-				o.uv = v.uv.xy;
-				o.uv_depth = v.uv.xy;
-
+				o.uv = v.uv;
+				o.uv_depth = v.uv;
 				return o;
 			}
 

@@ -93,7 +93,6 @@
 				//判断相交
 				float sceneZ = LinearEyeDepth(SAMPLE_DEPTH_TEXTURE_PROJ(_CameraDepthTexture, UNITY_PROJ_COORD(i.screenPos)));
 				float partZ = i.screenPos.z;
-
 				float diff = sceneZ - partZ;
 				float intersect = (1 - diff) * _IntersectPower;
 
