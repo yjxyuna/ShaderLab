@@ -9,6 +9,8 @@ Shader "chenjd/SeeThroughWall"
 		_MainTex ("Texture", 2D) = "white" {}
 		_EdgeColor("Edge Color", Color) = (1,1,1,1)
 		_EdgeWidth("EdgeWidth", Float) = 1.5
+
+		_aaa("aaa", Float) = 0.2
 	}
 	SubShader
 	{
@@ -18,6 +20,8 @@ Shader "chenjd/SeeThroughWall"
 		{
 			ZTest Greater
 			Blend One One
+//		Blend SrcAlpha OneMinusSrcAlpha
+			
 
 			CGPROGRAM
 			#pragma vertex vert
@@ -63,11 +67,25 @@ Shader "chenjd/SeeThroughWall"
 
 				return o;
 			}
-			
+
+			float _aaa;
+		
 			fixed4 frag (v2f i) : SV_Target
 			{
-				float NdotV = 1 - dot(i.normal, i.viewDir) * _EdgeWidth;
-				return _EdgeColor * NdotV;
+//				float NdotV = 1 - dot(i.normal, i.viewDir) * _EdgeWidth;
+	
+//				float NdotV = 1 - dot(i.normal, i.viewDir) ;
+//				NdotV *= NdotV * _EdgeWidth;
+//
+//				return _EdgeColor * NdotV;
+
+
+				half angle = dot(i.normal, i.viewDir);
+				half NdotV = angle - _EdgeWidth;
+				if (NdotV > 0)
+					return _EdgeColor * -NdotV;
+				else
+					return _EdgeColor * (angle - _aaa);
 			}
 			ENDCG
 		}
@@ -117,3 +135,4 @@ Shader "chenjd/SeeThroughWall"
 		}
 	}
 }
+

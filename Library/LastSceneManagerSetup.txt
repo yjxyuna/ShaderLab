@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/ScannerEffect/ScannerScene.unity
+- path: Assets/SeeThroughWall/SeeThroughWallScene.unity
   isLoaded: 1
   isActive: 1
