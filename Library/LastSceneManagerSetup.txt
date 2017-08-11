@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/SeeThroughWall/SeeThroughWallScene.unity
+- path: Assets/ThermalDistortion/ThermalDistortion.unity
   isLoaded: 1
   isActive: 1
