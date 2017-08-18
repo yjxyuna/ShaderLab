@@ -2,9 +2,10 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/SeeThroughWall/SeeThroughWall.shader">
     <Files>
-      <File FileName="Assets/SeeThroughWall/SeeThroughWall.shader" Line="88" Column="40" />
+      <File FileName="Assets/SeeThroughWall/SeeThroughWall.shader" Line="73" Column="35" />
       <File FileName="Assets/ForceField/ForceField.shader" Line="1" Column="1" />
-      <File FileName="../MtTween/Assets/MtEffect/MtEfBlur.cs" Line="1" Column="1" />
+      <File FileName="Assets/ThermalDistortion/ThermalDistortion.shader" Line="1" Column="1" />
+      <File FileName="Assets/ThermalDistortion/ReadMe.txt" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
