@@ -53,6 +53,7 @@
      <Compile Include="Assets\ScannerEffect\Script\ScannerEffect.cs" />
      <None Include="Assets\ThermalDistortion\ThermalDistortion.shader" />
      <None Include="Assets\ThermalDistortion\ReadMe.txt" />
+     <None Include="Assets\PipeFlow\PipeFlow.shader" />
      <None Include="Assets\RenderDepthMap\RenderDepthMap.shader" />
      <None Include="Assets\ScannerEffect\Shader\ScannerEffect.shader" />
      <None Include="Assets\SeeThroughWall\SeeThroughWall.shader" />
