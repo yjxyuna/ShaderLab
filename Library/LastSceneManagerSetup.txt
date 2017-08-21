@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/SeeThroughWall/SeeThroughWallScene.unity
+- path: Assets/PipeFlow/PipeFlow.unity
   isLoaded: 1
   isActive: 1
