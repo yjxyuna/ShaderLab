@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\ForceField\RenderDepth.cs" />
+     <Compile Include="Assets\PipeFlow\PipeFlow.cs" />
      <Compile Include="Assets\RenderDepthMap\RenderDepthMap.cs" />
      <Compile Include="Assets\Ripple\Control.cs" />
      <Compile Include="Assets\Ripple\Ripple.cs" />
