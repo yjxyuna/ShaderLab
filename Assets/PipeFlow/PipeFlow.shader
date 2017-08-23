@@ -14,6 +14,8 @@
 
 		[Space][Enum(Normal, 0, Flow, 1)] _State ("State", Float) = 0
 
+		[Space][Enum(Diffuse, 0, HalfLambert, 1)] _LightMode ("LightMode", Float) = 0
+
 		[Space] _Brightness("Brightness", Float) = 1
 		
 	}
@@ -58,6 +60,7 @@
 			half _InvertDirection;
 			half _State;
 			half _Brightness;
+			half _LightMode;
 			
 			v2f vert (appdata v)
 			{
@@ -117,10 +120,13 @@
 	                y = (y + 1.0) * 0.5;
 	                fixed ret = clamp(y, min, max);
 	                fixed4 color = lerp(_Color, fixed4(1, 1, 1, 1), clamp01(min, max, ret));
-	                return halfLambert(i.worldNormal) * color * _Brightness;
+//	                return halfLambert(i.worldNormal) * color * _Brightness;
+	                return fixed4(i.color, 1) * color * _Brightness;
+	                
 	            } else {
-	            	return halfLambert(i.worldNormal) * _Color * _Brightness;
-
+//	            	return halfLambert(i.worldNormal) * _Color * _Brightness;
+	            	return fixed4(i.color, 1) * _Color * _Brightness;
+	            	
 //	            	return test(i);
 	            }
 

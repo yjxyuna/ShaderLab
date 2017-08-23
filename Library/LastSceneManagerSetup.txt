@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/PipeFlow/PipeFlow.unity
+- path: Assets/DrawLine/DrawLine.unity
   isLoaded: 1
   isActive: 1
